@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="crI-ZZ-edt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Uj9-8T-vu5">
+            <objects>
+                <navigationController id="crI-ZZ-edt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tS5-G1-4Gq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7P4-RL-pEd" kind="relationship" relationship="rootViewController" id="kPO-ah-G6R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xlr-Sq-TbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="418"/>
+        </scene>
+        <!--收藏-->
+        <scene sceneID="X09-d4-751">
+            <objects>
+                <viewController id="7P4-RL-pEd" customClass="FavoritesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lBG-Op-jcg"/>
+                        <viewControllerLayoutGuide type="bottom" id="XXu-m3-Dw7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UTA-On-RPh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="收藏" id="pud-DX-Qoa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWD-0h-Yv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89" y="418"/>
+        </scene>
+    </scenes>
+</document>

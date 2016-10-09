@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aOd-Yc-QeD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RsP-8j-6I7">
+            <objects>
+                <navigationController id="aOd-Yc-QeD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vhj-go-pzD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LQa-SV-1Ex" kind="relationship" relationship="rootViewController" id="Vjb-mP-syM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bb-gV-eBF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-344" y="304.82666666666665"/>
+        </scene>
+        <!--更多-->
+        <scene sceneID="O3t-kF-uql">
+            <objects>
+                <viewController id="LQa-SV-1Ex" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RF2-b3-i9m"/>
+                        <viewControllerLayoutGuide type="bottom" id="WRb-SU-uCc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zkt-TR-z90">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0073_b.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WOK-uU-ina">
+                                <rect key="frame" x="-4" y="64" width="328" height="504"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="关于我们：我们曾经使用过一款关于诗经朗诵的APP，但是它的很多功能都没有实现。因此我们做了这样一个关于诗经学习的APP，实现了搜索，朗读，注释，收藏等功能。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xFm-DF-DmU">
+                                <rect key="frame" x="16" y="124" width="179" height="168"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="5EC-bp-9lh"/>
+                                    <constraint firstAttribute="width" constant="179" id="8MV-5s-d5K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WRb-SU-uCc" firstAttribute="top" secondItem="WOK-uU-ina" secondAttribute="bottom" id="5oe-Ja-rtW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WOK-uU-ina" secondAttribute="trailing" constant="-20" id="9k7-ZT-2a2"/>
+                            <constraint firstItem="xFm-DF-DmU" firstAttribute="top" secondItem="RF2-b3-i9m" secondAttribute="bottom" constant="60" id="FMa-pY-Zd8"/>
+                            <constraint firstItem="WOK-uU-ina" firstAttribute="leading" secondItem="zkt-TR-z90" secondAttribute="leadingMargin" constant="-20" id="QSc-jp-HXm"/>
+                            <constraint firstItem="xFm-DF-DmU" firstAttribute="leading" secondItem="zkt-TR-z90" secondAttribute="leadingMargin" id="f2t-Yt-uYh"/>
+                            <constraint firstItem="WOK-uU-ina" firstAttribute="top" secondItem="RF2-b3-i9m" secondAttribute="bottom" id="lh7-HR-fOg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="更多" id="epY-Kf-eCs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVU-v7-r4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="564"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0073_b.jpg" width="1280" height="1024"/>
+    </resources>
+</document>
